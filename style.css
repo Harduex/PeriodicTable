@@ -1,0 +1,115 @@
+.table{
+	width: 73em;
+	height: auto;
+	padding: 10px;
+	margin: auto;
+	padding-top: 10px;
+  }
+  .elem{
+	display: inline-block;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin: 3px;
+	border: 2px solid black;
+	transition: 0.2s;
+  }
+
+  .legend-other{
+	display: inline-block;
+	position: relative;
+	width: 182px;
+	height: 50px;
+	margin: 3px;
+  }
+
+  .box{
+	display: inline-block;
+	position: relative;
+	width: 15px;
+	height: 15px;
+	margin: 3px;
+	border: 2px solid black;
+	transition: 0.3s;
+  }
+
+  .text-box{
+	display: inline-block;
+	position: absolute;
+	width: auto;
+	height: 20px;
+	margin: 5px;
+	padding-bottom: 1px;
+	font-family: sans-serif;
+	font-size: 90%;
+  }
+
+  .elem:hover {
+	  box-shadow: 2px 2px 5px black;
+	  cursor: pointer;
+	  transform: scale(2);
+	  z-index: 1000;
+	  filter:saturate(250%)
+  }
+  
+  .legend {
+	display: inline-block;
+	position: absolute;
+	width: 550px;
+	height: 165px;
+	margin: 5px;
+	padding: 10px;
+  }
+
+  .hdn{
+	visibility: hidden;
+  }
+
+  .elem-name {
+	position: absolute;
+	left: 0;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: large;
+  }
+  
+.full-name {
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 70%;
+	width: 100%;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 47%;
+	transition: 0.2s;
+}
+
+.elem:hover .full-name{
+	opacity: 100%;
+}
+
+  .atomic-number {
+	position: relative;
+	left: 3px;
+	top: 2px;
+	font-family: sans-serif;
+	font-size: 11px;
+  }
+
+  a {
+	text-decoration: none;
+	color: black;
+  }
+
+.alcali-metals {background-color: #FFE0B2;}
+.alcaline-earth-metals {background-color: #FFCC80;}
+.transition-metals {background-color: #D2C4E8;}
+.other-metals {background-color: #ffcdd2;}
+.other-nometals {background-color: #ffab91;}
+.halogens {background-color: #a5d6a7;}
+.rare-earth {background-color: #e6ee9b;}
+.noble-gases {background-color: #ffffff;}
+.actinoid {background-color: #b3e5fc;}
